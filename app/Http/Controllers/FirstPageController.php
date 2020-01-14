@@ -11,7 +11,8 @@ class FirstPageController extends Controller
         return view('Firstpage');
     }
 
-    public function search($token){
+    public function search(Request $request){
+        $token =$request->token;
         $Internal = Internal::where('token','=',$token)->firstOrFail();
         return view('sucika',compact('Internal'));
     }

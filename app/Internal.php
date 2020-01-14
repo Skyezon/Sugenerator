@@ -9,5 +9,5 @@ class Internal extends Model
     //
     protected $fillable = [
         'name', 'role', 'token','motivation'
-        ];
+    ];
 }

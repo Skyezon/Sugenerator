@@ -13,7 +13,7 @@ class SucikaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,9 +24,8 @@ class SucikaRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required' | 'string'],
-            'motivation' => ['nullable'],
-            'role' => ['required']
+            'name' => 'required',
+            'role' => 'required'
         ];
     }
 }

@@ -20,9 +20,20 @@ class InternalController extends Controller
         return view('sucika',compact('Internal'));
     }
 
-    public function showEdit($id){
+    public function chooseForm($id = NULL){
+        $isNull = is_null(Internal::find($id));
+        if($isNull){
+           return $this->addForm();
+        }else{
+           return $this->editForm($id);
+        }
+    }
+
+    public function editForm($id){
+        $route = 'Internal.edit';
         $Internal = Internal::findOrFail($id);
-        return view('sucika-edit',compact('Internal'));
+        $keyValue = ['id' => $Internal->id];
+        return view('sucikaEdit',compact('Internal','route','keyValue'));
     }
 
     public function edit($id, SucikaRequest $request){
@@ -32,11 +43,17 @@ class InternalController extends Controller
             'motivation' => $request->motivation,
             'role' => $request->role
         ]);
-            return redirect()->route('Internal.showAll')->with('status','Sucika added');
+            return redirect()->route('Internal.showAll')->with('status','Sucika Updated');
     }
 
-    public function store(SucikaRequest $request){
-        $Internal = Internal::create([
+    public function addForm(){
+        $route = 'Internal.add';
+        $keyValue = '';
+        return view('sucikaAdd',compact('route','keyValue'));
+    }
+
+    public function add(SucikaRequest $request){
+        Internal::create([
             'name' => $request->name,
             'motivation' => $request->motivation,
             'role' => $request->role,
@@ -50,6 +67,12 @@ class InternalController extends Controller
         $Internal = Internal::findOrFail($id);
         $Internal->delete();
         return redirect()->route('Internal.showAll')->with('status','Sucika deleted');
+    }
+
+    //testview
+
+    public function testing($id){
+        return view('testing',compact('id'));
     }
 
 }

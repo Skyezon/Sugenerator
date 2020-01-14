@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid">
         @section('content')
-
+        
         @show
     </div>
     <script src="{{asset('js/app.js')}}"></script>
