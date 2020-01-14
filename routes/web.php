@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\FirstPageController;
+use App\Http\Controllers\InternalController;
+// use Illuminate\Routing\Route;
+
+Route::get('/','FirstPageController@show')->name('first.show');
+
+Route::get('/admin','InternalController@showAll')->name('Internal.showAll');
+
