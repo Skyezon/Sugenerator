@@ -38,3 +38,11 @@ Route::GET('/admin/{id}','InternalController@testing')->name('Internal.testing')
 
 //sucika function
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

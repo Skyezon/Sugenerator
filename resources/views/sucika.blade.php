@@ -1,5 +1,6 @@
 @extends('./layouts/all')
-@section('title', 'Sucika untuk {{$Internal->name}}')
+
+@section('title', 'Sucika untuk ')
 <main class="sucika">
     <div class="sucika__container">
         <h1 class="sucika__header">Hello {{$Internal->name}}</h1>

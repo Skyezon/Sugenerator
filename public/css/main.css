@@ -11356,3 +11356,52 @@ a.text-dark:focus {
   }
 }
 
+.table-v-align-middle > td {
+  vertical-align: middle !important;
+}
+
+.sucika {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.sucika__container {
+  padding: 4rem;
+  height: 50%;
+  width: 75%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column nowrap;
+  position: relative;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  background-color: white;
+  box-shadow: 0 5px 5rem 5px #868686;
+}
+
+.sucika__heading {
+  display: block;
+  position: absolute;
+}
+
+.sucika__body {
+  margin: 2rem auto;
+}
+
+.sucika__footer {
+  display: block;
+  position: absolute;
+  bottom: 2rem;
+  right: 6rem;
+}
+
