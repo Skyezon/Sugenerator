@@ -11,3 +11,40 @@
 .table-v-align-middle > td{
     vertical-align: middle !important;
 }
+
+.sucika{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    &__container{
+        padding: 4rem;
+        height: 50%;
+        width : 75%;
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0 5px 5rem 5px #868686;
+
+    }
+
+    &__heading{
+        display: block;
+        position: absolute;
+    }
+
+    &__body{
+        margin: 2rem auto;
+    }
+
+    &__footer{
+        display: block;
+        position: absolute;
+        bottom: 2rem;
+        right: 6rem;
+    }
+}

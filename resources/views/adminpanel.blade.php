@@ -47,5 +47,7 @@
         </tr>
         @endforeach
     </tbody>
+    {{ $Internals->links() }}
+
 </table>
 @endsection

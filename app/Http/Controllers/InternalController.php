@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 class InternalController extends Controller
 {
     public function showAll(){
-        $Internals = Internal::all();
+        $Internals = Internal::paginate(4);
         return view('adminpanel',compact('Internals'));
     }
 
