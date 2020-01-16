@@ -12,7 +12,7 @@
     <form enctype="multipart/form-data" method="POST" class="form-group d-flex flex-column" action={{ route('first.search') }}>
         @csrf
         @method('POST')
-        <input id="har" type="text" maxlength="5" class="px-2 text-center my-3" name="token">
+        <input id="har" type="text" maxlength="7" class="px-2 text-center my-3" name="token">
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 

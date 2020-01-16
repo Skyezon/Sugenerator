@@ -6,13 +6,20 @@ use App\Internal;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
-//'name', 'role', 'token','motivation'
+//__DIR__ itu index.php
 $factory->define(Internal::class, function (Faker $faker) {
+    $name = $faker->name;
+    $token = Str::random(7);
+    $namenospace = str_replace(' ','_',$name);
+    $qrcodePath= __DIR__.'/../../public/storage/qrcodes/'.$namenospace.'.png';
 
+    QrCode::format('png')->size(100)->generate('127.0.0.1/'.$token,$qrcodePath);
     return [
-        'name'=> $faker->name,
+        'name'=> $name,
         'role'=> 'aktivis',
-        'token' => Str::random(5),
-        'motivation' => $faker->paragraph
+        'token' => $token,
+        'motivation' => $faker->paragraph,
+        'isClose' => 0,
+        'qrcodePath' => '/storage/qrcodes/'.$namenospace.'.png'
     ];
 });

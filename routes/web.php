@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::GET('/','FirstPageController@show')->name('first.show');
 Route::POST('/','FirstPageController@search')->name('first.search');
+Route::POST('/{token}','FirstPageController@scan')->name('first.scan');
 
 //admin function
 

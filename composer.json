@@ -14,7 +14,7 @@
         "laravel/tinker": "^2.0"
     },
     "require-dev": {
-        "endroid/qr-code": "^3.7",
+        "simplesoftwareio/simple-qrcode": "~2",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
         "laravel/ui": "^1.4",
