@@ -22,5 +22,6 @@ class FirstPageController extends Controller
         $Internal = Internal::where('token','=',$token)->firstOrFail();
         $title = $Internal->name;
         return view('sucika',compact('Internal','title'));
+
     }
 }

@@ -1,4 +1,4 @@
-@extends('./layouts/all')
+@extends('./layouts/loading')
 
 @section('title', 'Sucika untuk ')
 <main class="sucika">
