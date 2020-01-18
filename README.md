@@ -15,6 +15,7 @@ env cannot be uploaded so use reveal key in setting
             "ext-mbstring" : "*"
         }
         ```
+    - if you're using node dependency don't forget to add heroku buildpacks : ```add heroku/nodejs```
 2. dont forget to composer update in local. **NOT** in the web console of heroku
 3. after this step push project to git
 4. deploy the branch in heroku
