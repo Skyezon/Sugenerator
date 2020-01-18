@@ -21,7 +21,7 @@ env cannot be uploaded so use reveal key in setting
     ```
     "scripts":{
         "postinstall" : "npm run prod"
-    }
+    }s
     ```
     npm task named "postinstall" will run during heroku deployments
 3. after this step push project to git
