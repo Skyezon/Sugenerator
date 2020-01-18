@@ -1,4 +1,5 @@
 
+@extends('./layouts/all')
 @extends('./layouts/loading')
 @section('title','Sucika dari Delbert')
 

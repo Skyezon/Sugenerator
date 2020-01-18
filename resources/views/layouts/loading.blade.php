@@ -1,4 +1,3 @@
-@extends('../layouts/all')
 
 @section('loading')
 <div id="load" class="loading">

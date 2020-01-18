@@ -1,6 +1,23 @@
-@import './app';
 @import './variables';
 @import './loading';
+@import './fold';
+@import './app';
+
+
+html{
+    font-size: 16px;
+}
+body{
+    position: relative;
+}
+
+a{
+    &:link,
+    &:visited{
+        color: white;
+        text-decoration: none;
+    }
+}
 
 .table-v-align-middle > td{
     vertical-align: middle !important;
@@ -14,7 +31,7 @@
 
     & >  div{
           margin-top: -50vh;
-        background-image: url('../images/first-min.png');
+        // background-image: url('../images/first-min.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -33,41 +50,61 @@
 }
 
 .sucika{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100vh;
     position: relative;
-    &__container{
-        padding: 4rem;
-        height: 50%;
-        width : 75%;
-        display: flex;
-        flex-flow: column nowrap;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0 5px 5rem 5px #868686;
+    // &__container{
+    //     padding: 4rem;
+    //     height: 50%;
+    //     width : 75%;
+    //     display: flex;
+    //     flex-flow: column nowrap;
+    //     position: relative;
+    //     justify-content: center;
+    //     align-items: center;
+    //     background-color: white;
+    //     box-shadow: 0 5px 5rem 5px #868686;
 
-    }
+    // }
 
-    &__heading{
-        display: block;
-        position: absolute;
-    }
+    // &__heading{
+    //     display: block;
+    //     position: absolute;
+    // }
 
-    &__body{
-        margin: 2rem auto;
-    }
+    // &__body{
+    //     margin: 2rem auto;
+    // }
 
     &__footer{
         display: block;
         position: absolute;
-        bottom: 2rem;
-        right: 6rem;
+        bottom: -3rem;
+        right: 0rem;
     }
 }
+
+.buttonku{
+    position: absolute;
+
+
+    &-1{
+        // display: none !important;
+        top: 0;
+        left: 50%;
+        // transform: translateX(-50%) translateY(-50%);
+    }
+
+    &-2{
+        top: 0;
+        left: -50%;
+        // transform: translateX(50%) translateY(50%);
+    }
+
+}
+
 
 @media only screen and (max-width: 600px){
     .bg-Img{
@@ -75,9 +112,25 @@
             margin-top: 0;
         }
     }
+
+    .buttonku{
+        position: absolute;
+
+        &-1{
+            display: none !important;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 100;
+        }
+
+        &-2{
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+    }
 }
 
 
-//loading animation css
-
-//end

@@ -14,6 +14,7 @@
 
 <body>
     @yield('loading')
+
     <div class="container-fluid">
         @section('content')
 
