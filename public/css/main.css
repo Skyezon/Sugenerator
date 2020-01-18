@@ -12404,6 +12404,7 @@ a:visited {
 
 .bg-Img > div {
   margin-top: -50vh;
+  background-image: url(/images/first-min.png?3a9786034e1d47c3fd26479288d0901c);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12426,7 +12427,7 @@ a:visited {
   display: block;
   position: absolute;
   bottom: -3rem;
-  right: 0rem;
+  right: 1rem;
 }
 
 .buttonku {
@@ -12441,6 +12442,7 @@ a:visited {
 .buttonku-2 {
   top: 0;
   left: -50%;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {

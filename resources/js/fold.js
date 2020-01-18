@@ -16,8 +16,8 @@ jQuery(document).ready(function($){
 
         let ubah1 = document.getElementById('ubah-judul-1');
         let ubah2 = document.getElementById('ubah-judul-2');
-        ubah1.textContent = "Thank you for reading this";
-        ubah2.textContent = "Thank you for reading this";
+        ubah1.textContent = "Thank you for reading!";
+        ubah2.textContent = "Thank you for reading!";
 
         let ubah1_btn = document.getElementById('ubah-button-1');
         let ubah2_btn = document.getElementById('ubah-button-2');

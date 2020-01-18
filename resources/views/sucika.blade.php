@@ -53,7 +53,7 @@
 
     <div class="fold-right"></div> <!-- this is the right fold -->
 
-    <div class="cd-fold-content">
+    <div class="cd-fold-content" style="height: 100vh">
         <!-- content will be loaded using javascript -->
         <div class="sucika">
         <div class="sucika__container">

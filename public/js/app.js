@@ -38201,8 +38201,8 @@ jQuery(document).ready(function ($) {
     toggleContent('', false);
     var ubah1 = document.getElementById('ubah-judul-1');
     var ubah2 = document.getElementById('ubah-judul-2');
-    ubah1.textContent = "Thank you for reading this";
-    ubah2.textContent = "Thank you for reading this";
+    ubah1.textContent = "Thank you for reading!";
+    ubah2.textContent = "Thank you for reading!";
     var ubah1_btn = document.getElementById('ubah-button-1');
     var ubah2_btn = document.getElementById('ubah-button-2');
     ubah1_btn.textContent = "Read again?";

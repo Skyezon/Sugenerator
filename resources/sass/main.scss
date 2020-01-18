@@ -31,7 +31,7 @@ a{
 
     & >  div{
           margin-top: -50vh;
-        // background-image: url('../images/first-min.png');
+        background-image: url('../images/first-min.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -82,7 +82,7 @@ a{
         display: block;
         position: absolute;
         bottom: -3rem;
-        right: 0rem;
+        right: 1rem;
     }
 }
 
@@ -100,6 +100,7 @@ a{
     &-2{
         top: 0;
         left: -50%;
+        overflow: hidden;
         // transform: translateX(50%) translateY(50%);
     }
 
