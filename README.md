@@ -23,6 +23,7 @@ env cannot be uploaded so use reveal key in setting
         "postinstall" : "npm run prod"
     }
     ```
+    npm task named "postinstall" will run during heroku deployments
 3. after this step push project to git
 4. deploy the branch in heroku
 5. set up the db and config vars
