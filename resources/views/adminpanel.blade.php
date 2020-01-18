@@ -26,6 +26,8 @@
             <th>Motivation</th>
             <th>Token</th>
             <th>Role</th>
+            <th>Dekat?</th>
+            <th>Qrcode</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -36,6 +38,8 @@
             <td class="w-25">{{$Internal->motivation}}</td>
             <td>{{$Internal->token}}</td>
             <td>{{$Internal->role}}</td>
+            <td>{{$Internal->isClose ? 'yes' : 'no'}}</td>
+            <td><img src={{asset($Internal->qrcodePath)}}></td>
             <td style="height: 100px" class="d-flex justify-content-sm-around flex-row align-items-center">
                 <a href={{ route('Internal.form-edit',['id' => $Internal->id]) }} class="btn btn-primary w-25">Edit</a>
                 <form method="POST" class="w-100" action={{ route('Internal.delete',['id' => $Internal->id]) }}>

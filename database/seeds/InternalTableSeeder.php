@@ -11,7 +11,7 @@ class InternalTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Internal::class, 50)->create()->each(function ($Internal) {
+        factory(App\Internal::class, 10)->create()->each(function ($Internal) {
            factory(App\Internal::class)->make();
         });
     }

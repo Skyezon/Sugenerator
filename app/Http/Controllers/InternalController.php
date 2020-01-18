@@ -15,11 +15,6 @@ class InternalController extends Controller
         return view('adminpanel',compact('Internals'));
     }
 
-    public function show($token){
-        $Internal = Internal::where('token','=',$token)->firstOrFail();
-        return view('sucika',compact('Internal'));
-    }
-
     public function chooseForm($id = NULL){
         $isNull = is_null(Internal::find($id));
         if($isNull){

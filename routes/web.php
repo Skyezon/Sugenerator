@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::GET('/','FirstPageController@show')->name('first.show');
 Route::POST('/','FirstPageController@search')->name('first.search');
+Route::GET('/scan/{token}','FirstPageController@scan')->name('first.scan');
 
 //admin function
 
@@ -38,3 +39,11 @@ Route::GET('/admin/{id}','InternalController@testing')->name('Internal.testing')
 
 //sucika function
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
