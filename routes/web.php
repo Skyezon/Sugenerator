@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::GET('/','FirstPageController@show')->name('first.show');
 Route::POST('/','FirstPageController@search')->name('first.search');
 Route::GET('/scan/{token}','FirstPageController@scan')->name('first.scan');
+Route::GET('/show/{token}','FirstPageController@scan')->name('first.result');
 
 //admin function
 

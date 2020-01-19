@@ -15,7 +15,8 @@ class FirstPageController extends Controller
         $token =$request->token;
         $Internal = Internal::where('token','=',$token)->firstOrFail();
         $title = $Internal->name;
-        return view('sucika',compact('Internal','title'));
+        // dd($Internal);
+        return redirect()->route('first.result',compact('token'));
     }
 
     public function scan($token){
