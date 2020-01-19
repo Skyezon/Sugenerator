@@ -21,6 +21,12 @@ class InternalController extends Controller
         return view('print',compact('Internals'));
     }
 
+    public function toke()
+    {
+        $Internals = Internal::all();
+        return view('toke',compact('Internals'));
+    }
+
     public function chooseForm($id = NULL){
         $isNull = is_null(Internal::find($id));
         if($isNull){

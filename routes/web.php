@@ -41,6 +41,7 @@ Route::GET('/admin/{id}','InternalController@testing')->name('Internal.testing')
 //print;
 
 Route::GET('/print','InternalController@print')->name('Print.show');
+Route::GET('/toke','InternalController@toke')->name('toke.show');
 
 //auth
 
