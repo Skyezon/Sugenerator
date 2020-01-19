@@ -13,10 +13,10 @@
         "laravel/framework": "^6.2",
         "laravel/tinker": "^2.0",
         "ext-gd" : "*",
+        "simplesoftwareio/simple-qrcode": "~2",
         "ext-mbstring" : "*"
     },
     "require-dev": {
-        "simplesoftwareio/simple-qrcode": "~2",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4@dev",
         "laravel/ui": "^1.4",
