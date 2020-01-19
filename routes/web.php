@@ -36,7 +36,7 @@ Route::DELETE('/adminpalingkerenyangsusahditebak/delete/{id}','InternalControlle
 
 //testing
 
-Route::GET('/adminpalingkerenyangsusahditebak/{id}','InternalController@testing')->name('Internal.testing');
+// Route::GET('/adminpalingkerenyangsusahditebak/{id}','InternalController@testing')->name('Internal.testing');
 
 //print;
 
