@@ -198,7 +198,7 @@ class InternalGenTableSeeder extends Seeder
             $token = Str::random(7);
             $namenospace = str_replace(' ','_',$name);
             $qrcodePath= __DIR__.'/../../public/storage/qrcodes/'.$namenospace.'.png';
-            QrCode::format('png')->size(100)->errorCorrection('H')->generate('http://sucika-delbert.herokuapp.com/scan/'.$token,$qrcodePath);
+            QrCode::format('png')->size(100)->errorCorrection('H')->generate('http://richarddelbert.epizy.com/sucika/scan/'.$token,$qrcodePath);
 
                 $isClose = 0;
                 if($isDekat[$i]){

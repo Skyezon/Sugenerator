@@ -38,8 +38,11 @@ Route::DELETE('/admin/delete/{id}','InternalController@delete')->name('Internal.
 
 Route::GET('/admin/{id}','InternalController@testing')->name('Internal.testing');
 
-//sucika function
+//print;
 
+Route::GET('/print','InternalController@print')->name('Print.show');
+
+//auth
 
 Auth::routes();
 

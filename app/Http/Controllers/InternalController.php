@@ -15,6 +15,12 @@ class InternalController extends Controller
         return view('adminpanel',compact('Internals'));
     }
 
+    public function print()
+    {
+        $Internals = Internal::all();
+        return view('print',compact('Internals'));
+    }
+
     public function chooseForm($id = NULL){
         $isNull = is_null(Internal::find($id));
         if($isNull){
