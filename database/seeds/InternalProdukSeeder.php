@@ -19,7 +19,7 @@ class InternalProdukSeeder extends Seeder
 
 
         foreach($Internals as $Internal){
-            QrCode::format('png')->size(100)->errorCorrection('H')->generate('http://sucika-delbert.herokuapp.com/scan/'.$Internal->token,$Internal->qrcodePath);
+            QrCode::format('png')->size(100)->errorCorrection('H')->generate('http://sucika-delbert.herokuapp.com/scan/'.$Internal->token,'public/'.$Internal->qrcodePath);
         }
 
 
