@@ -11,7 +11,7 @@
         </div>
         <i>or</i>
         <div>Your secret token is : <strong>{{$Internal->token}}</strong></div>
-        <div>The website is http://richarddelbert.epizy.com/sucika/</div>
+        <div>The website is http://sucika-delbert.herokuapp.com/</div>
     </div>
     @endforeach
 </div>
