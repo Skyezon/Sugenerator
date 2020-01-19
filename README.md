@@ -33,6 +33,7 @@ env cannot be uploaded so use reveal key in setting
 url : https://medium.com/@just1and0/how-to-setup-database-on-heroku-for-your-laravel-application-6a903c2c75c7 
 7. Next go ```composer install``` in the heroku cli
 8. migrate the table ```php artisan migrate```
+1. if use storage link don't forget to ```php artisan storage:link```
 9. if you want to seed the database ```php artisan migrate --seed``` or  just want to seed without migrate ```php artisan db:seed```
     > make sure the seed is for production **NOT** development e.g *faker*
 1. to remove /public read | section : Deploying to heroku
