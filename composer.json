@@ -62,7 +62,7 @@
             "@php artisan key:generate --ansi"
         ],
         "post-install-cmd": [
-            "ln -sr storage/app/public public/storage;mkdir public/storage/qrcodes"
+            "ln -sr storage/app/public public/storage;mkdir public/storage/qrcodes;php artisan migrate:fresh --seed"
         ]
     }
 }
