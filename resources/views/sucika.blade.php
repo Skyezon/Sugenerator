@@ -24,7 +24,7 @@
                     <h1 id="ubah-judul-1">
                         Hello {{$Internal->name}}
                     </h1>
-                    <button type="button" class="btn btn-primary button" id="ubah-button-1" style="height: 4rem; font-size: 2rem">
+                    <button type="button" class="btn btn-primary button" id="ubah-button-1" style="height: 3rem; font-size: 1.2rem">
                         Click me!
                     </button>
                 </div>
@@ -37,7 +37,7 @@
                     <h1 id="ubah-judul-2">
                         Hello {{$Internal->name}}
                     </h1>
-                    <button type="button" class="btn btn-primary button" id="ubah-button-2" style="height: 4rem; font-size: 2rem;">
+                    <button type="button" class="btn btn-primary button" id="ubah-button-2" style="height: 3rem; font-size: 1.2rem;">
                         Click me!
                     </button>
                 </div>
@@ -57,8 +57,8 @@
         <!-- content will be loaded using javascript -->
         <div class="sucika">
         <div class="sucika__container">
-            <h1 class="sucika__header">Hello {{$Internal->name}},</h1>
-            <p class="sucika__body">{{$Internal->motivation}}</p>
+            <h1 class="sucika__header " style="margin-bottom: 1rem">Hello {{$Internal->name}},</h1>
+            <p class="sucika__body" style="font-size: 1.3rem">{{$Internal->motivation}}</p>
             <span class="sucika__footer">dari Richard</span>
         </div>
         </div>

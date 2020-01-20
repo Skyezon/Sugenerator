@@ -12,7 +12,7 @@
     </div>
     <div class="d-flex justify-content-center flex-column align-items-center isi">
         <label for="har">
-            <h1 class="display-5 ">
+            <h1 class="display-5 font" style="font-family: Helvetica, Arial, sans-serif">
                 Malas scan barcode? input kodemu disini
             </h1>
         </label>
@@ -20,7 +20,7 @@
             @csrf
             @method('POST')
             <input id="har" type="text" maxlength="7" class="px-2 text-center my-3" name="token">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style="font-size: 1.2rem">Submit</button>
         </form>
     </div>
 
