@@ -64,7 +64,8 @@ class InternalController extends Controller
             'name' => $request->name,
             'motivation' => $request->motivation,
             'role' => $request->role,
-            'token' => Str::random(5)
+            'token' => Str::random(5),
+            'isClose' => 1
         ]);
 
         return redirect()->route('Internal.showAll')->with('status','Sucika added');
