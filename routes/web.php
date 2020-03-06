@@ -11,6 +11,12 @@
 |
 */
 
+use Illuminate\Support\Facades\URL;
+
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
+
 use App\Http\Controllers\FirstPageController;
 use App\Http\Controllers\InternalController;
 use Illuminate\Support\Facades\Route;
